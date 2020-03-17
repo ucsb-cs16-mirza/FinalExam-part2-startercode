@@ -26,7 +26,8 @@ TeaPacket* bestPacket(TeaPacket* head);
 /* Problem 2: 10 points
 Given a single linked list of nodes in ascending order by their `data` values and 
 a value `val` to insert, insert a new node with the given value such that the resulting 
-linked list remains sorted. Use the definition of Node provided below:
+linked list remains sorted. Return the head of the modified linked list.
+Use the definition of Node provided below:
 
 */
 
@@ -34,7 +35,7 @@ struct Node{
     int data;
     Node *next;
 };
-void insert(Node *head, int value);
+Node* insert(Node* head, int value);
 
 
 /************************************************/
