@@ -24,7 +24,7 @@ Node* insert(Node* head, int value){
 
 bool isBalanced(std::string s){
    
-   return true;
+   return false;
 }
 
 
