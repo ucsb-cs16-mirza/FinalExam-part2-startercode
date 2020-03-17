@@ -9,7 +9,6 @@
 /* Problem 1: 10 pts */
  
 TeaPacket* bestPacket(TeaPacket* head){
-   // TO DO
    return 0;
 }
 
@@ -18,14 +17,13 @@ TeaPacket* bestPacket(TeaPacket* head){
 /* Problem 2: 10 points*/
 
 Node* insert(Node* head, int value){
-   // TO DO
-   return;
+   return 0;
 }
 
 /* Problem 3: 10 points*/
 
-bool isBalanced(string s){
-   // TO DO
+bool isBalanced(std::string s){
+   
    return true;
 }
 

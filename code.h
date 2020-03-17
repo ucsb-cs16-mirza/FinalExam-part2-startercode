@@ -1,5 +1,6 @@
 #ifndef CODE_H
 #define CODE_H
+#include <string>
 
 /* Problem 1: 10 points
 Professor Kharitonova loves to drink different types of tea. 
@@ -8,8 +9,11 @@ This assortment is represented as a linked list of `TeaPacket` objects.
 
 Define the `value` of a packet to be `rarity * rating`. 
 Given the head of her linked list of `TeaPacket` objects, 
-write a RECURSIVE function to return the `TeaPacket` with the greatest `value`.
-
+write a RECURSIVE function to return the address of the `TeaPacket` 
+with the greatest `value`.
+If the linked list is empty return 0;
+If the multiple TeaPackets have the greatest value, return the one
+of the one that appears earliest in the linked list
 */
 
 struct TeaPacket{
@@ -45,12 +49,13 @@ Node* insert(Node* head, int value);
 Suppose that you are given a string that only contains characters A and B. 
 Additionally the string may have all As or all Bs or may be empty. 
 Define a string to be **balanced** if the number of A's match the number of B's.
+You may consider an empty string to be balanced
 */
 
 // Given a string s that contains only A's and B's, 
 // return true if s is "balanced", otherwise return false.
 
-bool isBalanced(string s);
+bool isBalanced(std::string s);
 
 /***************************************************/
 
@@ -71,7 +76,7 @@ the only requirement is that the high priorty nodes are before the low priority 
 
 
 struct Person{
-    string priority;
+    std::string priority; // value can only be "high" or "low"
     Person* next;
 };
 
