@@ -1,7 +1,7 @@
 #ifndef CODE_H
 #define CODE_H
 
-/* Problem 1: 10 pts
+/* Problem 1: 10 points
 Professor Kharitonova loves to drink different types of tea. 
 At home, she has many different tea packets, each with an `rating` and `rarity`. 
 This assortment is represented as a linked list of `TeaPacket` objects.
