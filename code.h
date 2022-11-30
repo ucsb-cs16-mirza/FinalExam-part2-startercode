@@ -11,9 +11,9 @@ Define the `value` of a packet to be `rarity * rating`.
 Given the head of her linked list of `TeaPacket` objects, 
 write a RECURSIVE function to return the address of the `TeaPacket` 
 with the greatest `value`.
-If the linked list is empty return 0;
-If the multiple TeaPackets have the greatest value, return the one
-of the one that appears earliest in the linked list
+If the linked list is empty, return 0;
+If multiple TeaPackets have the greatest value, 
+return the one that appears earliest in the linked list
 */
 
 struct TeaPacket{
@@ -23,14 +23,14 @@ struct TeaPacket{
 };
 
 // Implement the function below. 
-TeaPacket* bestPacket(TeaPacket* head);
+TeaPacket* bestPacket(TeaPacket *head);
 
 /***********************************************/
 
 /* Problem 2: 10 points
 Given a single linked list of nodes in ascending order by their `data` values and 
 a value `val` to insert, insert a new node with the given value such that the resulting 
-linked list remains sorted. Return the head of the modified linked list.
+linked list remains sorted (in ascending order). Return the head of the modified linked list.
 Use the definition of Node provided below:
 
 */
@@ -39,7 +39,7 @@ struct Node{
     int data;
     Node *next;
 };
-Node* insert(Node* head, int value);
+Node* insert(Node *head, int value);
 
 
 /************************************************/
@@ -80,7 +80,7 @@ struct Person{
     Person* next;
 };
 
-Person* priorityLinkedList(Person* head);
+Person* priorityLinkedList(Person *head);
 
 
 #endif
